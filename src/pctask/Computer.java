@@ -3,7 +3,7 @@ package pctask;
 public class Computer implements Comparable<Computer> {
 	private String cpu; // a processzor neve
 	private double clockspeed; // a processzor sebessége(GHz)
-	private int ram; // központi memória mérete(GB)
+	private int ram; // központi memória mérete(MB)
 	private int hdd; // a merevlemez tárolókapacitása(GB)
 	
 	//1. feladat: Konstruktor
@@ -57,7 +57,10 @@ public class Computer implements Comparable<Computer> {
 	//3. feladat: toString
 	@Override
 	public String toString() {
-		return cpu + " " + clockspeed + "GHz" + ram + "GB" + hdd + "GB";
+		return 	"Processzor típusa: "+cpu+"\r"+
+				"Processzor órajele: "+clockspeed+ "GHz"+"\r"+
+				"RAM mérete: "+ram+ "GB"+"\r"+
+				"HDD mérete: "+hdd+ "GB";
 	}
 
 	//4. feladat: equals()
