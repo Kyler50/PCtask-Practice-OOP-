@@ -32,7 +32,7 @@ public class Notebook extends Computer {
 	@Override
 	public String toString() {
 		DecimalFormat df = new DecimalFormat("##.0");
-		return super.toString() + ","+ df.format(uptime) + "óra üzemidõ";
+		return super.toString() + "\r"+ "Üzemidõ: " +  df.format(uptime) +  "óra";
 	}
 	
 

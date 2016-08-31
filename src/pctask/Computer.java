@@ -84,4 +84,9 @@ public class Computer implements Comparable<Computer> {
 	public interface Comparable<T> {
         public int compareTo(T o);
     }
+	
+	//10. feladat: Modern-e az adott gép
+	public boolean modern(){
+		return (clockspeed >= 1.6 && ram >= 2048 && hdd >= 160);
+	}
 }
