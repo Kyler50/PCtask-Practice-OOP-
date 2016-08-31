@@ -59,7 +59,7 @@ public class Computer implements Comparable<Computer> {
 	public String toString() {
 		return 	"Processzor típusa: "+cpu+"\r"+
 				"Processzor órajele: "+clockspeed+ "GHz"+"\r"+
-				"RAM mérete: "+ram+ "GB"+"\r"+
+				"RAM mérete: "+ram+ "MB"+"\r"+
 				"HDD mérete: "+hdd+ "GB";
 	}
 

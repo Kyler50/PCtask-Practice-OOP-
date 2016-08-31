@@ -28,7 +28,7 @@ public class Notebook extends Computer {
 		this.uptime = uptime;
 	}
 
-
+	//8. feladat: Elözõ toString felülírása
 	@Override
 	public String toString() {
 		DecimalFormat df = new DecimalFormat("##.0");
