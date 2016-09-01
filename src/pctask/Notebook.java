@@ -34,6 +34,13 @@ public class Notebook extends Computer {
 		DecimalFormat df = new DecimalFormat("##.0");
 		return super.toString() + "\r"+ "Üzemidõ: " +  df.format(uptime) +  "óra";
 	}
+
+
+	@Override
+	public boolean modern() {
+		return (super.getClockspeed() > 1.0 && super.getRam() >= 1024 && super.getHdd() >= 120 && uptime >= 3.0);
+	}
+	
 	
 
 }
